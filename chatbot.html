@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Customer Support</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f6f9;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            margin:0;
+        }
+
+        .container{
+            width:500px;
+            background:white;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            overflow:hidden;
+        }
+
+        .header{
+            background:#2563eb;
+            color:white;
+            text-align:center;
+            padding:15px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .chat-box{
+            padding:20px;
+        }
+
+        input{
+            width:75%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+
+        button{
+            padding:12px 18px;
+            background:#2563eb;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        🤖 AI Customer Support Chatbot
+    </div>
+
+    <div class="chat-box">
+        <form action="/chat" method="post">
+            <input type="text" name="message" placeholder="Ask me anything...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
